@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.ProgressBar?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+
+<GridPane alignment="center" hgap="10" vgap="10" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <columnConstraints>
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+   </rowConstraints>
+   <children>
+      <VBox prefHeight="600.0" prefWidth="800.0">
+         <children>
+            <TableView fx:id="table" VBox.vgrow="ALWAYS">
+              <columns>
+                <TableColumn fx:id="ip" prefWidth="122.0" text="IP地址" />
+                <TableColumn fx:id="port" prefWidth="112.0" text="端口号" />
+                  <TableColumn fx:id="errorMsg" maxWidth="1.7976931348623157E308" minWidth="-1.0" prefWidth="500.0" text="错误时的告警提示" />
+              </columns>
+            </TableView>
+            <ProgressBar fx:id="process" maxWidth="1.7976931348623157E308" progress="1.0" />
+         </children>
+      </VBox>
+   </children>
+</GridPane>
